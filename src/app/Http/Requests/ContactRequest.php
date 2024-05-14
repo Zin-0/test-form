@@ -24,7 +24,8 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'fullname_1' => ['required', 'string', 'max:255'],            'fullname_2' => ['required', 'string', 'max:255'],
+            'last-name' => ['required', 'string', 'max:255'],
+            'first-name' => ['required', 'string', 'max:255'],
             'gender' => ['required'],
             'email' => ['required', 'string', 'email', 'max:255'],
             'postcode' => ['required', 'string', 'max:8', 'min:8'],
@@ -36,12 +37,12 @@ class ContactRequest extends FormRequest
     public function messages()
     {
         return [
-            'fullname_1.required' => '名前を入力してください',
-            'fullname_1.string' => '名前を文字列で入力してください',
-            'fullname_1.max' => '名前を255文字以下で入力してください',
-            'fullname_2.required' => '名前を入力してください',
-            'fullname_2.string' => '名前を文字列で入力してください',
-            'fullname_2.max' => '名前を255文字以下で入力してください',
+            'last-name.required' => '名前を入力してください',
+            'last-name.string' => '名前を文字列で入力してください',
+            'last-name.max' => '名前を255文字以下で入力してください',
+            'first-name.required' => '名前を入力してください',
+            'first-name.string' => '名前を文字列で入力してください',
+            'first-name.max' => '名前を255文字以下で入力してください',
             'gender.required' => '性別を入力してください',
             'email.required' => 'メールアドレスを入力してください',
             'email.string' => 'メールアドレスを文字列で入力してください',

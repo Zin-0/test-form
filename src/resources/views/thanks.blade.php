@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="thanks__bottom">
-            <a href="">トップページへ</a>
+            <a href="/">トップページへ</a>
         </div>
     </main>
 </body>

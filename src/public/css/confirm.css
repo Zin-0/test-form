@@ -1,49 +1,56 @@
-.confirm__content {
-    margin: 0 auto;
-    padding: 30px 15px;
-    max-width: 1230px;
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.confirm__heading {
-    margin-bottom: 40px;
+body {
+    padding: 50px;
+    min-width: 600px;
+}
+
+h1 {
+    font-size: 25px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
-.form {
+span,
+label,
+input {
+    display: inline-block;
+}
+
+div {
+    padding: 7px 7px 60px 7px;
+}
+
+a {
+    color: black;
+}
+
+contact-form {
+    width: 100%;
     margin: 0 auto;
-    width: 70%;
+    max-width: 800px;
 }
 
-.confirm-table {
-    border: 1px solid #ddd;
-}
-
-.confirm-table__inner {
-    width: 100%;
-}
-
-.confirm-table__header {
-    padding: 15px;
-    width: 20%;
-    border-bottom: 1px solid #ddd;
-    background-color: #eee;
+.form-title {
     font-weight: bold;
+    width: 150px;
 }
 
-.confirm-table__text {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
+input {
+    height: 40px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
 }
 
-.confirm-table__text input {
-    width: 100%;
-    outline: none;
-    border: none;
-}
-
-.confirm-table__row:last-child .confirm-table__header,
-.confirm-table__row:last-child .confirm-table__text {
-    border-bottom-width: 0;
+.opinion {
+    width: 70%;
+    vertical-align: top;
+    line-height: 25px;
 }
 
 .form__button {
@@ -57,13 +64,19 @@
     height: 50px;
     border: none;
     border-radius: 3px;
-    background: #000;
+    background-color: #000;
     color: #fff;
     cursor: pointer;
 }
 
-.form__fix {
-    display: block;
+.form__button-fix {
+    width: 130px;
+    height: 40px;
+    font-weight: bold;
     text-align: center;
     padding-top: 10px;
+    text-decoration: underline;
+    color: black;
+    background: none;
+    border: none;
 }

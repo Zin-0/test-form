@@ -17,3 +17,8 @@ use App\Http\Controllers\ContactController;
 Route::get('/', [ContactController::class, 'index']);
 Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
 Route::post('/contacts', [ContactController::class, 'store']);
+Route::get('/management', [ContactController::class, 'management']);
+Route::post('/management', [ContactController::class, 'management']);
+Route::get('/search', [ContactController::class, 'search']);
+Route::post('/search', [ContactController::class, 'search']);
+Route::post('/delete', [ContactController::class, 'delete']);

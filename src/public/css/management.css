@@ -1,0 +1,189 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1500px;
+}
+
+h1 {
+    font-size: 25px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+span,
+label,
+input {
+    display: inline-block;
+}
+
+div:not(.search-bottom, .paginate) {
+    margin-bottom: 30px;
+}
+
+.form {
+    border: 1px solid black;
+    width: 90%;
+    margin: 0 auto 50px;
+    padding: 40px 70px 40px 70px;
+}
+
+.form-table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input {
+    width: 250px;
+    height: 50px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+}
+
+.search-content {
+    font-weight: bold;
+    width: 150px;
+}
+
+.search-top span {
+    width: 40px;
+}
+
+.name {
+    margin-right: 30px;
+}
+
+.gender {
+    width: 70px;
+    margin-left: 20px;
+    vertical-align: middle;
+    width: 30px;
+    margin-right: 5px;
+    accent-color: black;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px 30px;
+    word-break: break-all;
+}
+
+tr {
+    height: 60px;
+}
+
+.table-id {
+    width: 100px;
+}
+
+.table-name {
+    width: 200px;
+}
+
+.table-gender {
+    width: 120px;
+}
+
+.table-email {
+    width: 300px;
+}
+
+.table-opinion {
+    width: 500px;
+}
+
+.opinion {
+    display: block;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.opinion:hover {
+    white-space: normal;
+    width: 700px;
+}
+
+.delete {
+    text-align: right;
+}
+
+table button {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bottom {
+    text-align: center;
+}
+
+.form button {
+    width: 130px;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+.form button:nth-of-type(2) {
+    height: 30px;
+    color: black;
+    font-weight: 100;
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
+
+.search-middle span {
+    margin: 0 20px;
+}
+
+.paginate {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pagination li {
+    display: block;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    float: left;
+}
+
+.pagination li a {
+    text-decoration: none;
+    color: black;
+}
+
+.pagination .active {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+.pagination li:hover:not(.active, .disable) {
+    background-color: #ddd;
+}
